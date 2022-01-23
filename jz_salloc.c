@@ -6,13 +6,13 @@
 /*   By: jzoltan <jzoltan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/23 00:11:26 by jzoltan           #+#    #+#             */
-/*   Updated: 2022/01/23 02:53:52 by jzoltan          ###   ########.fr       */
+/*   Updated: 2022/01/23 03:26:52 by jzoltan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "jz_salloc.h"
 
-char	*jz_salloc_raw_memory(void)
+static char	*jz_salloc_raw_memory(void)
 {
 	static char	memory[JZ_SALLOC_SIZE] = {0};
 
